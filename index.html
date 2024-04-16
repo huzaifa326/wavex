@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- ==================================Header Section================================= -->
+  <!-- ================Nav================== -->
+
+  <nav class="bg-white sticky xl:absolute z-10 top-0 xl:top-[40px] right-0 left-0 px-[20px] shadow-nav-shadow">
+
+    <div class="w-full max-w-[1170px] mx-auto">
+      <div class="flex py-3 justify-between items-center">
+        <ul class="xl:flex hidden">
+          <li class="py-2"><a
+              class="text-[15px] mx-[50px] transition-all hover:text-blue-colour active:text-blue-colour"
+              href="#home">Home</a></li>
+          <li class="py-2"><a
+              class="text-[15px] mx-[50px] transition-all hover:text-blue-colour active:text-blue-colour"
+              href="#about">About Us</a></li>
+          <li class="py-2"><a
+              class="text-[15px] mx-[50px] transition-all hover:text-blue-colour active:text-blue-colour"
+              href="#work">Our Work</a></li>
+        </ul>
+        <div class="w-[120px] cursor-pointer"><img src="images/logo.png" alt=""></div>
+        <i class="xl:hidden text-2xl fa-solid fa-bars cursor-pointer"></i>
+
+        <ul class="xl:flex hidden">
+          <li class="py-2"><a
+              class="text-[15px] mx-[50px] transition-all hover:text-blue-colour active:text-blue-colour"
+              href="#pricing">Pricing</a></li>
+          <li class="py-2"><a
+              class="text-[15px] mx-[50px] transition-all hover:text-blue-colour active:text-blue-colour"
+              href="#clients">Our Clients</a></li>
+          <li class="py-2"><a
+              class="text-[15px] mx-[50px] transition-all hover:text-blue-colour active:text-blue-colour"
+              href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- =================Vertical Nav==================== -->
+      <div
+        class="hidden w-full left-[0px] right-[0px] vertical-nav bg-white absolute pt-[2px] px-[21px] border-t-[1px] border-[#cccccc]">
+        <ul>
+          <li class="py-[10px] border-b-[3px] border-[#666666]"><a
+              class=" mb-[10px]  transition-all hover:text-blue-colour active:text-blue-colour " href="#home">Home</a>
+          </li>
+          <li class="py-[10px] border-b-[3px] border-[#666666]"><a
+              class=" mb-[10px]  transition-all hover:text-blue-colour active:text-blue-colour " href="#about">About
+              Us</a></li>
+          <li class="py-[10px] border-b-[3px] border-[#666666]"><a
+              class=" mb-[10px]  transition-all hover:text-blue-colour active:text-blue-colour " href="#work">Our
+              Work</a></li>
+          <li class="py-[10px] border-b-[3px] border-[#666666]"><a
+              class=" mb-[10px]  transition-all hover:text-blue-colour active:text-blue-colour "
+              href="#pricing">Pricing</a></li>
+          <li class="py-[10px] border-b-[3px] border-[#666666]"><a
+              class=" mb-[10px]  transition-all hover:text-blue-colour active:text-blue-colour " href="#clients">Our
+              Client</a>
+          </li>
+          <li class="py-[10px] border-b-[3px] border-[#666666]"><a class=" mb-[10px] " href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ================Pic Section================== -->
+  <div class="relative z-0">
+
+    <div class="w-full headerslider " id="home">
+
+      <div class="relative">
+        <img class="w-full" src="/images/header.jpg">
+        <div
+          class="absolute translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%] max-w-[1170px] mx-auto flex justify-between px-[20px]">
+          <div class="text-center text-white hidden sm:block">
+            <span class="text-[60px] uppercase font-extrabold leading-none">We are Creative</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img class="w-full" src="/images/header2.jpg">
+        <div
+          class="absolute translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%] max-w-[1170px] mx-auto flex justify-between px-[20px]">
+          <div class="text-center hidden sm:block">
+            <span class="text-[60px] uppercase font-extrabold leading-none">WE ARE FLEXIBLE</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img class="w-full" src="/images/header3.jpg">
+        <div
+          class="absolute translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%] max-w-[1170px] mx-auto flex justify-between px-[20px]">
+          <div class="text-center text-white hidden sm:block">
+            <span class="text-[60px] uppercase font-extrabold leading-none">BE CALM & RELAX </span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================================Circles Section================================= -->
+
+  <div class="container my-10 sm:my-20 mx-auto max-w-[1170px] w-full text-center px-[20px]" id="about">
+
+
+    <h1 class="text-[32px] md:text-[48px] text-blue-colour leading-none">We are WaveX </h1>
+    <h1 class="text-[32px] md:text-[55px] font-extrabold text-black-colour leading-none">We Design your Future
+    </h1>
+    <p class="text-lg mt-3 ">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-8">
+
+      <div>
+        <!-- <div class="border-[5px] border-blue-colour rounded-full py-[20px] px-0"> -->
+        <div
+          class="cursor-pointer w-[220px] h-[220px] rounded-full mx-auto bg-blue-colour flex justify-center items-center">
+          <i class="fa fa-rocket text-[75px] text-white"></i>
+        </div>
+        <!-- </div> -->
+        <h4 class="font-semibold mt-[25px] mb-[5px] text-[18px] text-black-colour">Lorem Ipsum </h4>
+        <p class="text=[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+      </div>
+
+      <div>
+        <div class="w-[220px] h-[220px] rounded-full mx-auto bg-circle-color flex justify-center items-center">
+          <i class="fa fa-flask text-[75px] text-white"></i>
+        </div>
+        <h4 class="font-semibold	mt-[25px] mb-[5px] text-[18px] text-black-colour">Lorem Ipsum </h4>
+        <p class="text=[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+      </div>
+
+      <div>
+        <div class="w-[220px] h-[220px] rounded-full mx-auto bg-blue-colour flex justify-center items-center">
+          <i class="fa fa-envelope text-[75px] text-white"></i>
+        </div>
+        <h4 class="font-semibold	mt-[25px] mb-[5px] text-[18px] text-black-colour">Lorem Ipsum </h4>
+        <p class="text=[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+      </div>
+
+      <div>
+        <div class="w-[220px] h-[220px] rounded-full mx-auto bg-circle-color flex justify-center items-center">
+          <i class="fa fa-coffee text-[75px] text-white"></i>
+        </div>
+        <h4 class="font-semibold	mt-[25px] mb-[5px] text-[18px] text-black-colour">Lorem Ipsum </h4>
+        <p class="text=[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ==================================Graph Section================================= -->
+
+
+  <div class="text-center py-10 sm:py-20 bg-gray-100">
+
+    <h1 class="text-[32px] md:text-[48px] leading-none text-black-colour">Our Experties </h1>
+    <p class="text-lg mt-4 ">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+
+    <div class="max-w-[750px] mt-[40px] sm:mt-[70px] mx-auto text-white flex flex-col gap-y-7 px-[20px]">
+
+      <div class="flex justify-between gap-[12px]">
+        <div class=" bg-gray-200 rounded max-w-[630px] w-full">
+          <div class="bg-blue-colour w-[60%] py-[15px] rounded text-left pl-8"><span class="text-[18px]">HTML 5</span>
+          </div>
+        </div>
+        <div class="max-w-[54px] w-full rounded-full flex items-center justify-center bg-blue-colour">60%</div>
+      </div>
+
+      <div class="flex justify-between gap-[12px]">
+        <div class=" bg-gray-200 rounded max-w-[630px] w-full">
+          <div class="bg-black-colour w-[80%] py-[15px] rounded text-left pl-8"><span class="text-[18px]">Css 3</span>
+          </div>
+        </div>
+        <div class="max-w-[54px] w-full rounded-full flex items-center justify-center bg-black-colour">80%</div>
+      </div>
+
+      <div class="flex justify-between gap-[12px]">
+        <div class=" bg-gray-200 rounded max-w-[630px] w-full">
+          <div class="bg-blue-colour w-[95%] py-[15px] rounded text-left pl-8"><span class="text-[18px]">jQuery</span>
+          </div>
+        </div>
+        <div class="max-w-[54px] w-full rounded-full flex items-center justify-center bg-blue-colour">95%</div>
+      </div>
+
+      <div class="flex justify-between gap-[12px]">
+        <div class=" bg-gray-200 rounded max-w-[630px] w-full">
+          <div class="bg-black-colour w-[74%] py-[15px] rounded text-left pl-8"><span
+              class="text-[18px]">Wordpress</span>
+          </div>
+        </div>
+        <div class="max-w-[54px] w-full rounded-full flex items-center justify-center bg-black-colour">74%</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ==================================Team Section================================= -->
+
+  <div class="mx-auto my-10 sm:my-20 max-w-[1170px] text-center">
+    <h1 class="text-[32px] md:text-[48px] text-blue-colour leading-none">Yes We Are </h1>
+    <h1 class="text-[32px] md:text-[55px] font-extrabold text-black-colour leading-none">Creative Team </h1>
+    <p class="text-lg mt-3 ">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+
+    <div class="mt-10 sm:mt-28 grid grid-cols-1 lg:grid-cols-3 gap-9 px-[20px]">
+
+      <div class="bg-gray-100 p-[25px] relative lg:pt-[85px]">
+        <img
+          class="w-[146px] h-[146px] mx-auto rounded-full lg:absolute top-[-10px] left-[50%] lg:translate-x-[-50%] lg:translate-y-[-50%]"
+          src="images/team-1.jpg" alt="">
+        <h4 class="text-[30px] mt-2 font-semibold text-blue-colour">John Smith</h4>
+        <span class="text-[16px] font-semibold">Creative Director</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. of Quisque ultricies Graphic vestibulum molestie.
+        </p>
+        <div class="text-[30px] mt-[25px] flex justify-center items-center gap-2">
+          <div
+            class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+            <i class="text-[20px] text-white fa-brands fa-facebook"></i>
+          </div>
+          <div
+            class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+            <i class="text-[20px] text-white fa-brands fa-twitter"></i>
+          </div>
+          <div
+            class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+            <i class="text-[20px] text-white fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 p-[25px] relative lg:pt-[85px]">
+        <img
+          class="w-[146px] h-[146px] mx-auto rounded-full lg:absolute top-[-10px] left-[50%] lg:translate-x-[-50%] lg:translate-y-[-50%]"
+          src="images/team-2.jpg" alt="">
+        <h4 class="text-[30px] mt-2 font-semibold text-blue-colour">Zoilo nano </h4>
+        <span class="text-[16px] font-semibold">Web Developer </span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. of Quisque ultricies Graphic vestibulum molestie.
+        </p>
+        <div class="text-[30px] mt-[25px] flex justify-center items-center gap-2">
+          <div
+            class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+            <i class="text-[20px] text-white fa-brands fa-facebook"></i>
+          </div>
+          <div
+            class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+            <i class="text-[20px] text-white fa-brands fa-twitter"></i>
+          </div>
+          <div
+            class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+            <i class="text-[20px] text-white fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 p-[25px] relative lg:pt-[85px]">
+        <img
+          class="w-[146px] h-[146px] mx-auto rounded-full lg:absolute top-[-10px] left-[50%] lg:translate-x-[-50%] lg:translate-y-[-50%]"
+          src="images/team-3.jpg" alt="">
+        <h4 class="text-[30px] mt-2 font-semibold text-blue-colour">Johny Bravo </h4>
+        <span class="text-[16px] font-semibold">Creative Designer</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. of Quisque ultricies Graphic vestibulum molestie.
+        </p>
+        <div class="text-[30px] mt-[25px] flex justify-center items-center gap-2">
+          <div
+            class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+            <i class="text-[20px] text-white fa-brands fa-facebook"></i>
+          </div>
+          <div
+            class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+            <i class="text-[20px] text-white fa-brands fa-twitter"></i>
+          </div>
+          <div
+            class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+            <i class="text-[20px] text-white fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================================Counter Section================================= -->
+
+  <div class="relative h-[528px] w-full">
+    <div class="bg-repeat	absolute left-0 right-0 w-full h-full" style="background-image: url(images/patteren.png);">
+    </div>
+    <div
+      class="bg-fixed w-full h-full flex items-center justify-center bg-left-top md:bg-center md:bg-cover bg-no-repeat"
+      style="background-image: url(images/counter.jpg);">
+
+      <div class="max-w-[1170px]">
+        <div class="counter grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-20">
+
+          <div class="text-white text-center">
+            <span class="text-[60px] md:text-[92px] font-bold leading-none ">120</span>
+            <p class="text-[16px] md:text-[22px] font-bold mt-5">PROJECTS</p>
+          </div>
+
+          <div class="text-white text-center">
+            <span class="text-[60px] md:text-[92px] font-bold leading-none">161</span>
+            <p class="text-[16px] md:text-[22px] font-bold  mt-5">TOTAL EMPLOYEES</p>
+          </div>
+
+          <div class="text-white text-center">
+            <span class="text-[60px] md:text-[92px] font-bold leading-none">13</span>
+            <p class="text-[16px] md:text-[22px] font-bold  mt-5">OUR OFFICES</p>
+          </div>
+
+          <div class="text-white text-center">
+            <span class="text-[60px] md:text-[92px] font-bold leading-none">212</span>
+            <p class="text-[16px] md:text-[22px] font-bold  mt-5">CLIENTS</p>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- ==================================Work Section================================= -->
+
+  <div class="w-full text-center mt-[40px]" id="work">
+
+    <div class="px-[20px]">
+      <h1 class="text-[32px] md:text-[48px] text-blue-colour leading-none">Our Work</h1>
+      <h1 class="text-[32px] md:text-[55px] font-extrabold text-black-colour leading-none">We Create awesome Stuff
+      </h1>
+      <p class="text-lg mt-3 ">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+      <div class="flex justify-center mt-8 mb-14">
+        <div class="flex gap-3">
+          <button class="border border-gray-colour px-[25px] py-[10px] bg-blue-colour text-white">All</button>
+          <button
+            class="border border-gray-colour px-[25px] py-[10px] hover:bg-blue-colour hover:text-white">Photos</button>
+          <button
+            class="border border-gray-colour px-[25px] py-[10px] hover:bg-blue-colour hover:text-white">Videos</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 cursor-pointer">
+
+      <div class="relative group">
+        <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work1.jpg" alt="">
+        <div
+          class="ease-in duration-500 group-hover:flex w-full absolute inset-0 h-full bg-[rgba(96,202,232,0.83)] z-10 text-white items-center justify-center hidden">
+          <div class="">
+            <h5 class="font-light	text-[24px]">WaveX</h5>
+            <span class="font-semibold	text-[24px]">Latest Graphic Work</span>
+            <span class="block">photos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work2.jpg" alt="">
+        <div
+          class="ease-in duration-500 group-hover:flex w-full absolute inset-0 h-full bg-[rgba(96,202,232,0.83)] z-10 text-white items-center justify-center hidden">
+          <div class="">
+            <h5 class="font-light	text-[24px]">WaveX</h5>
+            <span class="font-semibold	text-[24px]">Latest Graphic Work</span>
+            <span class="block">photos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work3.jpg" alt="">
+        <div
+          class="ease-in duration-500 group-hover:flex w-full absolute inset-0 h-full bg-[rgba(96,202,232,0.83)] z-10 text-white items-center justify-center hidden">
+          <div class="">
+            <h5 class="font-light	text-[24px]">WaveX</h5>
+            <span class="font-semibold	text-[24px]">Latest Graphic Work</span>
+            <span class="block">photos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work4.jpg" alt="">
+        <div
+          class="ease-in duration-500 group-hover:flex w-full absolute inset-0 h-full bg-[rgba(96,202,232,0.83)] z-10 text-white items-center justify-center hidden">
+          <div class="">
+            <h5 class="font-light	text-[24px]">WaveX</h5>
+            <span class="font-semibold	text-[24px]">Latest Graphic Work</span>
+            <span class="block">photos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work5.jpg" alt="">
+        <div
+          class="ease-in duration-500 group-hover:flex w-full absolute inset-0 h-full bg-[rgba(96,202,232,0.83)] z-10 text-white items-center justify-center hidden">
+          <div class="">
+            <h5 class="font-light	text-[24px]">WaveX</h5>
+            <span class="font-semibold	text-[24px]">Latest Graphic Work</span>
+            <span class="block">photos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work6.jpg" alt="">
+        <div
+          class="ease-in duration-500 group-hover:flex w-full absolute inset-0 h-full bg-[rgba(96,202,232,0.83)] z-10 text-white items-center justify-center hidden">
+          <div class="">
+            <h5 class="font-light	text-[24px]">WaveX</h5>
+            <span class="font-semibold	text-[24px]">Latest Graphic Work</span>
+            <span class="block">photos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work7.jpg" alt="">
+        <div
+          class="ease-in duration-500 group-hover:flex w-full absolute inset-0 h-full bg-[rgba(96,202,232,0.83)] z-10 text-white items-center justify-center hidden">
+          <div class="">
+            <h5 class="font-light	text-[24px]">WaveX</h5>
+            <span class="font-semibold	text-[24px]">Latest Graphic Work</span>
+            <span class="block">photos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work8.jpg" alt="">
+        <div
+          class="ease-in duration-500 group-hover:flex w-full absolute inset-0 h-full bg-[rgba(96,202,232,0.83)] z-10 text-white items-center justify-center hidden">
+          <div class="">
+            <h5 class="font-light	text-[24px]">WaveX</h5>
+            <span class="font-semibold	text-[24px]">Latest Graphic Work</span>
+            <span class="block">photos</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work1.jpg" alt="">
+      <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work2.jpg" alt="">
+      <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work3.jpg" alt="">
+      <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work4.jpg" alt="">
+      <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work5.jpg" alt="">
+      <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work6.jpg" alt="">
+      <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work7.jpg" alt="">
+      <img class="w-full bg-center bg-cover bg-no-repeat" src="images/work8.jpg" alt=""> -->
+    </div>
+  </div>
+
+  <!-- =================================Featured Work Section================================= -->
+
+  <div class="text-center pt-[20px] sm:pt-[45px]">
+    <h2 class="text-[32px] md:text-[52px] text-black-colour font-medium mt-[20px] mb-[10px]">Featured Work</h2>
+    <p class="text-[18px] mb-[40px]">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+    <img class="w-full" src="images/feature.png" alt="">
+  </div>
+  <!-- =================================Pen Section================================= -->
+  <div class="relative h-[528px] w-full">
+    <div class="bg-repeat	absolute left-0 right-0 w-full h-full" style="background-image: url(images/patteren.png);">
+    </div>
+
+    <div class="bg-fixed w-full px-[20px] h-full flex items-center justify-center bg-center bg-cover bg-no-repeat"
+      style="background-image: url(images/pen-bg.jpg);">
+      <div class="max-w-[1170px] w-full border-[6px] border-white text-center pt-[60px] pb-[30px]">
+
+        <div class="max-w-[70%] mx-auto">
+          <div class="pensection">
+
+            <div>
+              <p class="text-[16px] md:text-[20px]  mb-[13px]">Accounting’s responsiveness is better than any other <b>
+                  @industry professional </b> I’ve ever seen. Whether it’s picking up the phone and calling you back or
+                email response. They are very <b>@responsive</b> </p>
+              <span class="text-[18px] font-semibold text-blue-colour">2 Days ago</span>
+            </div>
+
+            <div>
+              <p class="text-[16px] md:text-[20px]  mb-[13px]">Accounting’s responsiveness is better than any other <b>
+                  @industry professional </b> I’ve ever seen. Whether it’s picking up the phone and calling you back or
+                email response. They are very <b>@responsive</b> </p>
+              <span class="text-[18px] font-semibold text-blue-colour">2 Days ago</span>
+            </div>
+
+            <div>
+              <p class="text-[16px] md:text-[20px]  mb-[13px]">Accounting’s responsiveness is better than any other <b>
+                  @industry professional </b> I’ve ever seen. Whether it’s picking up the phone and calling you back or
+                email response. They are very <b>@responsive</b> </p>
+              <span class="text-[18px] font-semibold text-blue-colour">2 Days ago</span>
+            </div>
+
+            <div>
+              <p class="text-[16px] md:text-[20px]  mb-[13px]">Accounting’s responsiveness is better than any other <b>
+                  @industry professional </b> I’ve ever seen. Whether it’s picking up the phone and calling you back or
+                email response. They are very <b>@responsive</b> </p>
+              <span class="text-[18px] font-semibold text-blue-colour">2 Days ago</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- <i class="fa-solid fa-circle mr-[1px] text-[13px]"></i> -->
+  <!-- ================================= Pricing Section================================= -->
+
+  <div class="text-center my-10 sm:my-20" id="pricing">
+
+    <h1 class="text-[32px] md:text-[48px] text-blue-colour leading-none">Our Pricing</h1>
+    <h1 class="text-[32px] md:text-[55px] font-extrabold text-black-colour leading-none pt-2">Check Our Latest Rates
+    </h1>
+    <p class="text-lg mt-4 ">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+
+    <div class="max-w-[1170px] mx-[20px] lg:mx-auto mt-10">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+
+        <!-- ===================== -->
+
+        <div class="text-white bg-black-box">
+          <h2 class="text-[48px] py-[20px] mt-[8px]">Basic</h2>
+          <div class="bg-white">
+            <span class="text-[46px] font-bold text-blue-colour"><span class="text-[24px]">$</span>25<span
+                class="text-[18px]">/mon.</span>
+            </span>
+          </div>
+          <ul class="mt-[30px]">
+            <li class="leading-[46px]">50MB Monthly Traffic</li>
+            <li class="leading-[46px]">3 Email Account </li>
+            <li class="leading-[46px]">Theme Updates </li>
+            <li class="leading-[46px]">Layered Photoshop Files </li>
+          </ul>
+          <div class="mt-[15px] mb-[45px] "> <a
+              class="cursor-pointer transition-all hover:bg-blue-colour hover:text-white  bg-white text-black py-[13px] px-[20px]">Sign
+              Up Now</a></div>
+        </div>
+
+        <!-- ===================== -->
+
+        <div class="text-white bg-blue-colour  pb-[30px]">
+          <h2 class="text-[48px] py-[20px] mt-[8px]">Standard</h2>
+          <div class="bg-white">
+            <span class="text-[54px] font-bold text-black"><span class="text-[24px]">$</span>45<span
+                class="text-[18px]">/mon.</span>
+            </span>
+          </div>
+          <ul class="mt-[30px]">
+            <li class="leading-[64px] text-[18px]">150MB Monthly Traffic</li>
+            <li class="leading-[64px] text-[18px]">10 Email Account </li>
+            <li class="leading-[64px] text-[18px]">Theme Updates </li>
+            <li class="leading-[64px] text-[18px]">Layered Photoshop Files </li>
+          </ul>
+          <div class="mt-[15px] mb-[35px]"> <a
+              class="cursor-pointer transition-all hover:bg-black-colour hover:text-white bg-white text-black py-[13px] px-[20px]">Sign
+              Up Now</a></div>
+        </div>
+
+        <!-- ===================== -->
+
+        <div class="text-white bg-black-box">
+          <h2 class="text-[48px] py-[20px] mt-[8px]">Premium</h2>
+          <div class="bg-white">
+            <span class="text-[46px] font-bold text-blue-colour"><span class="text-[24px]">$</span>75<span
+                class="text-[18px]">/mon.</span>
+            </span>
+          </div>
+          <ul class="mt-[30px]">
+            <li class="leading-[46px]">300MB Monthly Traffic</li>
+            <li class="leading-[46px]">15 Email Account </li>
+            <li class="leading-[46px]">Theme Updates </li>
+            <li class="leading-[46px]">Layered Photoshop Files </li>
+          </ul>
+          <div class="mt-[15px] mb-[45px]"> <a
+              class="cursor-pointer transition-all hover:bg-blue-colour hover:text-white bg-white text-black py-[13px] px-[20px]">Sign
+              Up Now</a></div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================================= Slider Section================================= -->
+
+  <div class="relative h-[630px] w-full">
+    <div class="bg-repeat	absolute left-0 right-0 w-full h-full" style="background-image: url(images/patteren.png);">
+    </div>
+    <div
+      class="bg-fixed px-[20px] w-full h-full flex items-center justify-center bg-left-top md:bg-center bg-cover bg-no-repeat text-center"
+      style="background-image: url(images/third-bg.jpg);" id="clients">
+
+      <div class="w-full max-w-[1170px]">
+
+        <h1 class="text-[32px] md:text-[48px]  text-black-colour leading-none">Our Clients</h1>
+        <h1 class="text-[32px] md:text-[55px] font-extrabold text-blue-colour leading-none pt-2">We Value The Quality
+          First </h1>
+
+        <div class=" hidden md:flex items-center justify-between w-[55%] mx-auto mt-[50px] ">
+          <img class="bg-center bg-cover bg-no-repeat w-[109px] h-[21px]" src="images/because.png" alt="">
+          <img class="bg-center bg-cover bg-no-repeat w-[121px]" src="images/ratings.png" alt="">
+          <img class="bg-center bg-cover bg-no-repeat w-[109px] h-[21px]" src="images/because.png" alt="">
+          <img class="bg-center bg-cover bg-no-repeat w-[121px]" src="images/ratings.png" alt="">
+        </div>
+
+        <div class=" mt-[40px] sm:mt-[65px] flex justify-between items-center">
+          <!-- <img class="hidden md:block" src="images/left.png" alt=""> -->
+          <!-- ==============Slider====================== -->
+          <div class="w-[83%] mx-auto singleSlider">
+            <div>
+              <p class="text-[20px] mb-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting the
+                readable content of a page when looking at its layout. The point of using Lorem Ipsum is it has a
+                more-or-less normal distribution of letters, as opposed readable English.</p>
+              <span class="uppercase italic font-semibold">RATINGS VIA THEMEFOREST</span>
+            </div>
+            <div>
+              <p class="text-[20px] mb-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting the
+                readable content of a page when looking at its layout. The point of using Lorem Ipsum is it has a
+                more-or-less normal distribution of letters, as opposed readable English.</p>
+              <span class="uppercase italic font-semibold">RATINGS VIA THEMEFOREST</span>
+            </div>
+          </div>
+          <!-- ==================================== -->
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- ================================= News Section================================= -->
+
+  <div class="max-w-[1170px] text-center my-10 sm:my-20 px-[20px] md:mx-auto">
+    <h1 class="text-[32px] md:text-[48px] leading-none text-black-colour">News & Events </h1>
+    <p class="text-lg mt-4 ">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+
+    <div class="mt-4 sm:mt-10 flex flex-wrap justify-between md:justify-evenly xl:justify-between">
+
+      <!-- ============================ -->
+
+      <div class="text-center md:text-right w-[100%] md:w-[45%] mt-[25px]">
+        <span class="text-[14px] font-semibold uppercase"><a class="text-blue-colour ">There are many variations of
+            passages</a></span>
+        <span class="text-[14px] text-gray-colour block"> 05/18/2014</span>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting by the readable content of a page when
+          looking at its layout and calling you back. They are very responsive. </p>
+        <a class="text-blue-colour uppercase font-semibold">read more</a>
+      </div>
+
+      <img class="invisible xl:visible hidden xl:block" src="images/border.png" alt="">
+      <img class="invisible md:visible hidden md:block w-[45%] bg-center bg-cover bg-no-repeat" src="images/news1.jpg"
+        alt="">
+
+      <!-- ============================ -->
+
+      <img class="w-[45%] mt-[35px] invisible md:visible hidden md:block bg-center bg-cover bg-no-repeat"
+        src="images/news2.jpg" alt="">
+      <img class="invisible xl:visible hidden xl:block" src="images/border.png" alt="">
+
+      <div class="text-center md:text-left w-[100%] md:w-[45%] mt-[60px]">
+        <span class="text-[14px] font-semibold uppercase"><a class="text-blue-colour ">There are many variations of
+            passages</a></span>
+        <span class="text-[14px] text-gray-colour block"> 05/18/2014</span>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting by the readable content of a page when
+          looking at its layout and calling you back. They are very responsive. </p>
+        <a class="text-blue-colour uppercase font-semibold">read more</a>
+      </div>
+
+      <!-- ============================ -->
+
+      <div class="text-center md:text-right w-[100%] md:w-[45%] mt-[65px]">
+        <span class="text-[14px] font-semibold uppercase"><a class="text-blue-colour ">There are many variations of
+            passages</a></span>
+        <span class="text-[14px] text-gray-colour block"> 05/18/2014</span>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting by the readable content of a page when
+          looking at its layout and calling you back. They are very responsive. </p>
+        <a class="text-blue-colour uppercase font-semibold">read more</a>
+      </div>
+
+      <img class="invisible xl:visible hidden xl:block" src="images/border.png" alt="">
+      <img class="mt-[35px] invisible md:visible hidden md:block w-[45%] bg-center bg-cover bg-no-repeat"
+        src="images/news3.jpg" alt="">
+
+      <!-- ============================ -->
+    </div>
+  </div>
+
+  <!-- ================================= Contact Section================================= -->
+
+  <div class="relative h-[720px] w-full">
+    <div class="bg-repeat	absolute left-0 right-0 w-full h-full" style="background-image: url(images/patteren.png);">
+    </div>
+    <div
+      class="bg-fixed w-full px-[20px] min-h-full flex justify-center bg-center bg-cover bg-no-repeat text-center text-white"
+      style="background-image: url(images/contact.jpg);" id="contact">
+
+      <div class="mt-[70px]">
+        <h1 class="text-[32px] md:text-[48px] leading-none">Contact Us </h1>
+        <h1 class="text-[32px] md:text-[55px] font-extrabold leading-none pt-2">Get in Touch with Us </h1>
+        <p class="text-lg mt-4 ">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+
+        <form class="bg-white relative pb-[70px] mt-[94px]">
+          <input
+            class="mt-[20px] w-[90%] text-center bg-gray-200 mb-[20px] border outline-none border-bor-color	text-[16px]	 py-[7px]"
+            type="text" placeholder="Name">
+          <input
+            class="w-[90%] text-center bg-gray-200  mb-[20px] border outline-none border-bor-color text-[16px]		 py-[7px]"
+            type="text" placeholder="Email">
+          <textarea class="w-[90%] py-[7px] text-center bg-gray-200 border outline-none border-bor-color text-[16px]"
+            placeholder="Message" rows="7"></textarea>
+          <button
+            class="bg-blue-colour block py-[9px] px-[32px] absolute bottom-[40px] translate-x-[-50%] translate-y-[-50%] left-[50%]">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="border-[5px] border-blue-colour w-[100%]"></div>
+
+
+  <!-- ================================= Footer Section================================= -->
+
+  <div class="text-center px-[20px]">
+    <h5 class="text-[24px] mt-[60px] sm:mt-[40px]">Connect with WaveX </h5>
+
+    <div class="mt-[20px] mb-[30px] text-[25px] flex flex-wrap justify-center items-center gap-2">
+      <div
+        class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+        <i class="text-[20px] text-white fa-brands fa-facebook"></i>
+      </div>
+      <div
+        class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+        <i class="text-[20px] text-white fa-brands fa-twitter"></i>
+      </div>
+      <div
+        class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+        <i class="text-[20px] text-white fa-brands fa-google-plus"></i>
+      </div>
+      <div
+        class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+        <i class="text-[20px] text-white fa-brands fa-instagram"></i>
+      </div>
+      <div
+        class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+        <i class="text-[20px] text-white fa-brands fa-youtube"></i>
+      </div>
+      <div
+        class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+        <i class="text-[20px] text-white fa-brands fa-dribbble"></i>
+      </div>
+      <div
+        class="rounded-full cursor-pointer flex justify-center items-center w-[40px] h-[40px] bg-black-colour hover:bg-blue-colour">
+        <i class="text-[20px] text-white fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+
+    <p>Copyright © 2014 WaveX. All rights reserved. </p>
+    <p class="max-w-[1050px] mx-auto my-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's
+      standard dummy text ever since publishing software like Aldus of Lorem Ipsum.</p>
+  </div>
+
+  <!-- ================================================================== -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

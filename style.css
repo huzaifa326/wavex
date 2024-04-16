@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* , body{
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ========================Slick Slider====================== */
+.singleSlider .slick-prev:before,
+.singleSlider .slick-next:before {
+  content: none;
+}
+
+.singleSlider .slick-prev {
+  background-image: url(/images/left.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 93px;
+  left: -54px;
+  color: white;
+  opacity: 0.5;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.singleSlider .slick-next {
+  background-image: url(/images/right.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 93px;
+  right: -54px;
+  color: white;
+  opacity: 0.5;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* ====================== */
+.headerslider .slick-next:before,
+.headerslider .slick-prev:before {
+  content: none;
+}
+.headerslider .slick-prev {
+  background-image: url(/images/prev.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  left: 96px;
+  z-index: 2;
+}
+
+.headerslider .slick-next {
+  background-image: url(/images/next.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  right: 90px;
+}
+
+/* ====================== */
+.pensection .slick-dots li button:before {
+  width: 13px;
+  height: 13px;
+  font-size: 16px;
+  color: white;
+  opacity: 1;
+}
+
+.slick-dots {
+  bottom: -35px;
+}
+
+.slick-dots li {
+  margin: 0 1px;
+}
+.slick-dots li.slick-active button:before {
+  color: gray;
+  opacity: 0.75;
+}
+
+/* ====================== */
+
+@media screen and (max-width: 640px) {
+  .headerslider .slick-prev {
+    left: 30px;
+  }
+
+  .headerslider .slick-next {
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerslider .slick-prev {
+    left: 50px;
+  }
+
+  .headerslider .slick-next {
+    right: 50px;
+  }
+}
